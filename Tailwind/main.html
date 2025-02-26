@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Feedback Form</title>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <h1 class="text-2xl font-semibold mb-6">Feedback Form</h1>
+        <form action="#" method="POST" class="space-y-6">
+            <!-- Name Input -->
+            <div>
+                <label for="name" class="block font-medium text-gray-700 mb-2">Name <span class="text-red-500">*</span></label>
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" id="first-name" name="first-name" placeholder="First" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    <input type="text" id="last-name" name="last-name" placeholder="Last" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+            </div>
+
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block font-medium text-gray-700 mb-2">Email <span class="text-red-500">*</span></label>
+                <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <!-- Rating -->
+            <div>
+                <label class="block font-medium text-gray-700 mb-2">Your Experience <span class="text-red-500">*</span></label>
+                <div class="flex space-x-1">
+                    <input type="radio" id="star1" name="experience" value="1" class="hidden">
+                    <label for="star1" class="text-gray-400 hover:text-yellow-500 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 .587l3.668 7.568L24 9.75l-6 5.847L19.335 24 12 20.017 4.665 24 6 15.597 0 9.75l8.332-1.595L12 .587z" />
+                        </svg>
+                    </label>
+                    <input type="radio" id="star2" name="experience" value="2" class="hidden">
+                    <label for="star2" class="text-gray-400 hover:text-yellow-500 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 .587l3.668 7.568L24 9.75l-6 5.847L19.335 24 12 20.017 4.665 24 6 15.597 0 9.75l8.332-1.595L12 .587z" />
+                        </svg>
+                    </label>
+                    <input type="radio" id="star3" name="experience" value="3" class="hidden">
+                    <label for="star3" class="text-gray-400 hover:text-yellow-500 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 .587l3.668 7.568L24 9.75l-6 5.847L19.335 24 12 20.017 4.665 24 6 15.597 0 9.75l8.332-1.595L12 .587z" />
+                        </svg>
+                    </label>
+                    <input type="radio" id="star4" name="experience" value="4" class="hidden">
+                    <label for="star4" class="text-gray-400 hover:text-yellow-500 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 .587l3.668 7.568L24 9.75l-6 5.847L19.335 24 12 20.017 4.665 24 6 15.597 0 9.75l8.332-1.595L12 .587z" />
+                        </svg>
+                    </label>
+                    <input type="radio" id="star5" name="experience" value="5" class="hidden">
+                    <label for="star5" class="text-gray-400 hover:text-yellow-500 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 .587l3.668 7.568L24 9.75l-6 5.847L19.335 24 12 20.017 4.665 24 6 15.597 0 9.75l8.332-1.595L12 .587z" />
+                        </svg>
+                    </label>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Overall, how would you rate your experience with us?</p>
+            </div>
+
+            <!-- Satisfaction Radio Buttons -->
+            <div>
+                <label class="block font-medium text-gray-700 mb-2">How satisfied are you with <span class="text-red-500">*</span></label>
+                <div class="space-y-4">
+                    <div class="grid grid-cols-6 items-center">
+                        <label for="purchase" class="col-span-2">Purchase</label>
+                        <div class="col-span-4 flex justify-between">
+                            <input type="radio" name="purchase" value="1">
+                            <input type="radio" name="purchase" value="2">
+                            <input type="radio" name="purchase" value="3">
+                            <input type="radio" name="purchase" value="4">
+                            <input type="radio" name="purchase" value="5">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6 items-center">
+                        <label for="service" class="col-span-2">Service</label>
+                        <div class="col-span-4 flex justify-between">
+                            <input type="radio" name="service" value="1">
+                            <input type="radio" name="service" value="2">
+                            <input type="radio" name="service" value="3">
+                            <input type="radio" name="service" value="4">
+                            <input type="radio" name="service" value="5">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6 items-center">
+                        <label for="company-overall" class="col-span-2">Company Overall</label>
+                        <div class="col-span-4 flex justify-between">
+                            <input type="radio" name="company-overall" value="1">
+                            <input type="radio" name="company-overall" value="2">
+                            <input type="radio" name="company-overall" value="3">
+                            <input type="radio" name="company-overall" value="4">
+                            <input type="radio" name="company-overall" value="5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Likelihood Radio Buttons -->
+            <div>
+                <label class="block font-medium text-gray-700 mb-2">How likely are you to <span class="text-red-500">*</span></label>
+                <div class="space-y-4">
+                    <div class="grid grid-cols-6 items-center">
+                        <label for="buy-again" class="col-span-2">Buy from us again</label>
+                        <div class="col-span-4 flex justify-between">
+                            <input type="radio" name="buy-again" value="1">
+                            <input type="radio" name="buy-again" value="2">
+                            <input type="radio" name="buy-again" value="3">
+                            <input type="radio" name="buy-again" value="4">
+                            <input type="radio" name="buy-again" value="5">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6 items-center">
+                        <label for="recommend-product" class="col-span-2">Recommend our product to others</label>
+                        <div class="col-span-4 flex justify-between">
+                            <input type="radio" name="recommend-product" value="1">
+                            <input type="radio" name="recommend-product" value="2">
+                            <input type="radio" name="recommend-product" value="3">
+                            <input type="radio" name="recommend-product" value="4">
+                            <input type="radio" name="recommend-product" value="5">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6 items-center">
+                        <label for="recommend-company" class="col-span-2">Recommend our company to others</label>
+                        <div class="col-span-4 flex justify-between">
+                            <input type="radio" name="recommend-company" value="1">
+                            <input type="radio" name="recommend-company" value="2">
+                            <input type="radio" name="recommend-company" value="3">
+                            <input type="radio" name="recommend-company" value="4">
+                            <input type="radio" name="recommend-company" value="5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments Section -->
+            <div>
+                <label for="comments" class="block font-medium text-gray-700 mb-2">Additional comments or suggestions</label>
+                <textarea id="comments" name="comments" rows="4" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" class="px-6 py-2 bg-blue-500 text-white font-semibold rounded-md shadow-sm hover:bg-blue-600">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
